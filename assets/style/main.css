@@ -1,0 +1,186 @@
+/* "css variables" */
+:root {
+    --main-bg-color: #fff;
+    --btn-bg-color: #ffffff;
+    --btn-bg-color-blue: rgb(32, 125, 248);
+    --font-color: #ffffff;
+    --body-bg-color: #6c757d;
+    --link-color: #078571;
+    --nav-color: #343a40;
+    --btn-ho-color: #0f6eeb;
+    --shadow-color: rgb(0, 0, 0, 0.2);
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--body-bg-color);
+    text-align: left;
+    background-color: #fff;
+}
+
+/* ////////////////////////////////////////// {header section} //////////////////////////////////////////  */
+
+.header_text {
+    -webkit-text-stroke: 4px var(--font-color);
+}
+
+.about-img {
+    margin-top: 50px;
+    /* margin-left: -100px;
+    right: -60px; */
+}
+
+
+
+.header-icon {
+    width: 200px;
+}
+
+.btn {
+    padding: 18px 25px;
+    border-radius: 100px;
+}
+
+.btn-white {
+    background-color: #fff;
+    border: 2px solid var(--btn-bg-color);
+}
+
+.btn-blue {
+    border: 2.4px solid var(--btn-bg-color);
+    color: var(--btn-bg-color);
+}
+
+.hero-text {
+    margin-top: 150px;
+}
+
+.typed-cursor {
+    font-size: 45px;
+    color: var(--font-color);
+}
+
+.position-absolute {
+    font-weight: 700;
+}
+
+/* ////////////////////////////////////////// {navbar section} //////////////////////////////////////////  */
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+
+
+.nav-item {
+    transition: transform 0.3s ease;
+}
+
+.navbar-light .navbar-nav .navbar-light {
+    padding: 25px 10px;
+    color: var(--nav-color);
+    font-weight: 500;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--link-color);
+    transform: scale(1.2);
+
+}
+
+/* ////////////////////////////////////////// {about section} //////////////////////////////////////////  */
+.blue {
+    background-color: var(--btn-bg-color-blue);
+    color: var(--font-color);
+}
+
+.blue:hover {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-ho-color);
+    border-radius: 2px solid rgb(0, 89, 255);
+}
+
+.porogress {
+    border-radius: 10px;
+}
+
+.porogress .progress-bar {
+    width: 0px;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+
+.display-1 {
+    font-size: 160px;
+    font-weight: 1000;
+}
+
+.position-absolute {
+    font-weight: 700;
+}
+
+/* ////////////////////////////////////////// {Service section} //////////////////////////////////////////  */
+.service-h4 {
+    padding-bottom: 30px;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+}
+
+.service-box {
+    box-shadow: 0px 1px 7px var(--shadow-color);
+    margin-left: 15px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* ////////////////////////////////////////// {portfolio section} //////////////////////////////////////////  */
+.portfolio-item .portfolio-btn {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+    opacity: 1;
+    width: calc(100% - 60%);
+    height: calc(100% - 60%);
+    top: 30%;
+    left: 30%;
+}
+
+
+
+@media screen and (max-width: 996px) {
+    .header-section {
+        position: relative !important;
+    }
+}
