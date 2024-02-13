@@ -20,7 +20,6 @@
     <!-- {fontawsome} -->
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css" rel="stylesheet">
 
     <!-- {lightbox} -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css"> -->
@@ -39,19 +38,18 @@
             </h1>
         </a>
         <!-- ## icon nav bar for  -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarhidden">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarhidden">
             <span class="navbar-toggler-icon  "></span>
 
         </button>
         <div class="collapse navbar-collapse px-lg-3" id="navbarhidden">
-            <div class="navbar-nav  m-auto py-0 ">
-                <a href="#home" class="nav-item nav-link active">Home</a>
+            <div class="navbar-nav  ms-auto py-0 me-auto align-items-sm-center  ">
+                <a href="#mainc" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link ">Quality</a>
                 <a href="#skills " class="nav-item nav-link ">Skill</a>
+                <a href="#resume" class="nav-item nav-link ">Resume</a>
                 <a href="#service" class="nav-item nav-link ">service</a>
                 <a href="#portfolio" class="nav-item nav-link ">Portfolio</a>
-                <a href="#testimonial" class="nav-item nav-link ">Review</a>
                 <a href="#contact" class="nav-item nav-link ">Contact</a>
             </div>
         </div>
@@ -72,8 +70,8 @@
 
                     <!-- # button # -->
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-4">
-                        <a href="assets/file/Muhamad Almwaas.pdf" class="btn btn-white ">Download cv</a>
-                        <a class="btn btn-blue d-none d-sm-block ms-5">About Me</a>
+                        <a href="assets/file/Muhamad Almwaas.pdf" class="btn btn-white boverBtn">Download cv</a>
+                        <a class="btn btn-blue d-none d-sm-block ms-5 boverBtn-R">About Me</a>
                     </div>
                 </div>
                 <!-- {my header image} -->
@@ -102,8 +100,8 @@
                 <h1 class="position-absolute header-section text-uppercase text-primary my-4  ">About Me</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0 ">
-                    <img class="img-fluid rounded" style="width: 400px;" src="assets/image/115.jpg" alt="">
+                <div class="col-lg-5 pb-4 pb-lg-0 align-items-center ">
+                    <img class="img-fluid rounded box" src="assets/image/115.jpg" alt="">
 
                 </div>
                 <div class="col-lg-7">
@@ -143,11 +141,12 @@
                     </div>
                     <!-- button -->
                     <a href="" class="btn btn-outline-primary blue me-4">Hire Me</a>
-                    <a href="" class="btn btn-outline-primary  ">Learn More</a>
+                    <a href="" class="btn btn-outline-primary">Learn More</a>
                 </div>
 
             </div>
         </div>
+
 
     </div>
     <!-- ////////////////////////////////////////// {End about section} ////////////////////////////////////////// -->
@@ -288,7 +287,7 @@
 
 
     <!-- ////////////////////////////////////////// {resume section} ////////////////////////////////////////// -->
-    <div class="container-fluid  py-5" id="#qualification">
+    <div class="container-fluid  py-5" id="resume">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white   d-none d-md-non  d-sm-none d-lg-block d-xl-block  "
@@ -389,7 +388,7 @@
             </div>
             <div class="row pb-3 ">
 
-                <div class="service-box col-xl-4 col-lg-4  col-md-12 text-center  mb-5">
+                <div class="service-box col-xl-4 col-lg-4 box col-md-12 text-center  mb-5">
                     <div class="d-flex align-items-center justify-content-center  mb-4">
                         <i class="fa fa-2x fa-palette service-icon bg-primary text-white me-3"></i>
                         <h4 class="fw-bold m-0"> Web Design</h4>
@@ -398,16 +397,18 @@
                     <a href="" class="border-bottom border-primary text-decoration-none">Read More</a>
 
                 </div>
-                <div class="service-box col-xl-3 col-lg-3  col-md-12 text-center  mb-5">
+
+                <div class="service-box col-xl-3 col-lg-3 box col-md-12 text-center  mb-5">
                     <div class="d-flex align-items-center justify-content-center  mb-4">
                         <i class="fa fa-2x fa-laptop service-icon bg-primary text-white me-3"></i>
-                        <h4 class="fw-bold m-0"> Web Devlopment</h4>
+                        <h4 class="fw-bold m-0">Web Devlopment</h4>
                     </div>
                     <p>Building websites with code for online functionality. </p>
                     <a href="" class="border-bottom border-primary text-decoration-none">Read More</a>
 
                 </div>
-                <div class="service-box col-xl-4 col-lg-4  col-md-12 text-center  mb-5">
+
+                <div class="service-box col-xl-4 col-lg-4 box col-md-12 text-center  mb-5">
                     <div class="d-flex align-items-center justify-content-center  mb-4">
                         <i class="fa fa-2x fa-laptop service-icon bg-primary text-white me-3"></i>
                         <h4 class="fw-bold m-0">System Analysis</h4>
@@ -423,6 +424,9 @@
         </div>
     </div>
     <!-- ////// //////////////////////////////////// {end section} ////////////////////////////////////////// -->
+
+
+
 
 
     <!-- ////// //////////////////////////////////// {portfolio section} ////////////////////////////////////////// -->
